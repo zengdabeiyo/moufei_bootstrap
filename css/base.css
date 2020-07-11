@@ -1,0 +1,9 @@
+/* 公共css样式 */
+body{
+	font-size: 14px;
+	color: #333;
+}
+a,a:hover{
+	text-decoration: none;
+	color: #333;
+}

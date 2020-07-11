@@ -1,0 +1,237 @@
+// 定义变量
+@baseColor:#e92322;
+/*导航样式*/
+.index_nav{
+	// 兄弟关系
+	&.navbar{
+		margin-bottom: 0px;
+	}
+	// 导航条的高度
+	.navbar-brand{
+		height: 80px;
+	}
+	// 修改导航项的样式
+	.navbar-nav{
+		> li{
+			> a{
+				line-height: 60px;
+				font-size: 16px;
+				margin: 0px 5px;
+			}
+			>a:hover,a:focus{
+				color: #777;
+				border-bottom: 3px solid @baseColor;
+			}
+		}
+		.active{
+			> a,a:hover,a:focus{
+				background-color: transparent;
+				border-bottom: 3px solid @baseColor;
+				
+			}
+		}
+	}
+    // 修改
+	.navbar-toggle{
+		margin-top: 23px;
+	}
+}
+/*轮播图样式*/
+.index_banner{
+	.pcImg{
+		width: 100%;
+		height: 410px;
+		display: block;
+	
+		/* 设置背景图片居中显示 */
+		background-position: center center;
+		/* 设置背景图的大小 */
+		background-size: cover;
+	}
+	.mobileImg{
+		width: 100%;
+		display: block;
+	}
+	.mobileImg > img{
+		width: 100%;
+		display: block;
+	}
+}
+/*信息块样式*/
+.index_info{
+	padding: 30px;
+	.row{
+		> div{
+			margin-top: 20px;
+		}
+	}
+}
+/*产品块*/
+.index_products{
+	padding: 20px;
+	// 设置标签导航条
+	.tab_parent{
+		overflow-x: auto;  
+		overflow-y: hidden;  
+		width: 100%; 
+	}
+	.nav-tabs{
+		> li{
+			> a{
+				line-height: 30px;
+				font-size: 18px;
+			}
+		}
+	}
+	// 面板内容
+	.tab-content{
+		padding-top: 20px;
+		// 阴影
+		.thumbnail:hover{ box-shadow: 1px 1px 20px 5px #eee;}
+		   // 商品文字部分
+		  .caption{
+			  padding: 0px 20px;
+		     > h3{ 
+				 font-size: 20px;
+				 white-space: nowrap;
+				 overflow: hidden;
+				 text-overflow: ellipsis;
+			    }
+			 > div{
+				 height: 30px;
+				 > .spanlf{
+				   float: left;
+				   font-size: 18px;
+				   color:@baseColor;
+				 }
+				 > .spanrt{
+				   float: right;
+				   font-size: 18px;
+				   text-decoration: line-through;
+				 }
+			 }
+		  }
+	}
+}
+
+/*信息块*/
+.index_news{
+	margin-bottom: 20px;
+	padding-top: 20px;
+	.news_title{
+		line-height: 50px;
+		font-size: 22px;
+		font-weight: bold;
+		text-align: center;
+		border-bottom: 1px solid #ccc;
+		position: relative;
+		// 添加伪元素
+		&::before{
+			content: "";
+			width: 8px;
+			height: 8px;
+			border-radius: 50%;
+			border: 1px solid #ccc;
+			position: absolute;
+			bottom: -4px;
+			right: -8px;
+		}
+	}
+    // 添加虚线
+	.news_line{
+    	width: 1px;
+    	height: 100%;
+    	position: absolute;
+    	border-left: 1px dashed @baseColor;
+    	left:45px;
+    	top:0;
+    }
+	// 标签页
+	.nav-tabs{
+		border-bottom: none;
+		> li{
+			margin-bottom:60px;
+			> a{
+				background-color: #ccc;
+				width: 60px;
+				height: 60px;
+				border-radius: 50%;
+				border: none;
+				
+			}
+			> a:hover{
+				border: none;
+				background-color: @baseColor;
+			}
+			&.active{
+				> a, a:hover, a:focus{
+					border: none;
+					background-color: @baseColor;
+				}
+			}
+			.glyphicon{
+				font-size: 30px;
+				color: #fff;
+			}
+		}
+	    > li:last-child{
+			margin-bottom: 0px;
+		}
+		// 使用媒体查询设置w在768~992之间li元素的样式
+		@media screen and (min-width:768px) and (max-width:992px) {
+		  > li{
+			  margin: 20px 30px;
+		  }
+		}
+		// 使用媒体查询设置w小于768li元素的样式
+		@media screen and (max-width:768px){
+			> li{
+				margin: 20px 0px;
+				padding-left: 5%;
+				width: 25%;
+			}
+		}
+	}
+	
+	// 新闻资讯列表
+	.news_list{
+		list-style: none;
+		> li{
+			line-height: 60px;
+			font-size: 18px;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+	}
+}
+
+// 底部备案
+.index_footer{
+	background-color: #ccc;
+	.footer_partner{
+		line-height: 30px;
+		padding: 30px 0px 10px 0px;
+		a{
+			display: inline-block;
+			border-left: 1px solid #bbb;
+			padding: 0px 20px;
+		}
+		a:first-child{
+			border-left: none;
+		}
+		a:hover{
+			color: @baseColor;
+		}
+	}
+	.footer_record{
+		line-height: 30px;
+		a{
+			display: inline-block;
+			padding: 0px 20px;
+		}
+		a:hover{
+			color: @baseColor;
+		}
+	}
+}

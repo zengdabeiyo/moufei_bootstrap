@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+	<!-- 为了让IE以最新的标准和模式进行当前页码的渲染 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- 移动端适配 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- 引入Bootstrap框架核心样式文件 -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+	<script src="./bootstrap/js/jquery.min.js"></script>
+	<script src="./bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/index.js"></script>
+  </head>
+  <body>
+	<!-- 导航条部分 -->
+    <nav class="navbar navbar-default index_nav">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+		  <!-- 页面缩小时的按钮 -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- logo -->
+		  <a class="navbar-brand" href="#"><img src="images/logo1.png"></a>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav hidden-sm">
+            <li class="active"><a href="#">公司首页<span class="sr-only">(current)</span></a></li>
+            <li><a href="#">公司介绍</a></li>
+			<li><a href="#">行业动态</a></li>
+			<li><a href="#">店铺商品</a></li>
+			<li><a href="#">服务支持</a></li>
+			<li><a href="#">联系我们</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+			<li><a href="#">个人中心</a></li>
+            
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    
+	<!-- 轮播图 -->
+	<div id="carousel-example-generic" class="carousel slide index_banner" data-ride="carousel">
+	  <!-- Indicators:点标记 -->
+	  <ol class="carousel-indicators">
+		  <!-- ata-target="#carousel-example-generic"：当前这个li元素控制的是哪一个轮播图 -->
+		  <!-- data-slide-to="0"：当前li指向的是哪一个索引图 -->
+	    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+	    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+	    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+	  </ol>
+	
+	  <!-- Wrapper for slides：轮播图 -->
+	  <div class="carousel-inner" role="listbox">
+		<!-- 每一个item项就是一个轮播的图片内容 -->
+	    <div class="item active" data-large-img="images/img1_02.jpg" data-small-img="images/img1_01.jpg">
+		    
+	    </div>
+		
+		<div class="item" data-large-img="images/img2_02.jpg" data-small-img="images/img2_01.jpg"></div>
+		
+		<div class="item" data-large-img="images/img3_02.jpg" data-small-img="images/img3_01.jpg"></div>
+		
+		<div class="item" data-large-img="images/img4_02.jpg" data-small-img="images/img4_01.jpg"></div>
+		
+	  </div>
+	
+	  <!-- Controls：左右控制符-->
+	  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+	    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	    <span class="sr-only">Previous</span>
+	  </a>
+	  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+	    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	    <span class="sr-only">Next</span>
+	  </a>
+	</div>
+
+	<!-- 信息块 -->
+    <div class="index_info hidden-xs">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-md-4">
+					<a href="javascript:;">
+						<div class="media">
+							<div class="media-left">
+							  <a href="#">
+								<img class="media-object" src="images/info_img1.png" alt="">
+							  </a>
+							</div>
+							<div class="media-body">
+							  <h3 class="media-heading">品质保障</h3>
+							  <p>品质护航，购物无忧</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-sm-6 col-md-4">
+					<a href="javascript:;">
+						<div class="media">
+							<div class="media-left">
+							  <a href="#">
+								<img class="media-object" src="images/info_img2.png" alt="">
+							  </a>
+							</div>
+							<div class="media-body">
+							  <h3 class="media-heading">七天无理由退换</h3>
+							  <p>为您提供售后无忧保障</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-sm-6 col-md-4">
+					<a href="javascript:;">
+						<div class="media">
+							<div class="media-left">
+							  <a href="#">
+								<img class="media-object" src="images/info_img3.png" alt="">
+							  </a>
+							</div>
+							<div class="media-body">
+							  <h3 class="media-heading">特殊服务体验</h3>
+							  <p>为您呈现不一样的服务</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-sm-6 col-md-4">
+					<a href="javascript:;">
+						<div class="media">
+							<div class="media-left">
+							  <a href="#">
+								<img class="media-object" src="images/info_img4.png" alt="">
+							  </a>
+							</div>
+							<div class="media-body">
+							  <h3 class="media-heading">帮助中心</h3>
+							  <p>您的购物指南</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-sm-6 col-md-4">
+					<a href="javascript:;">
+						<div class="media">
+							<div class="media-left">
+							  <a href="#">
+								<img class="media-object" src="images/info_img1.png" alt="">
+							  </a>
+							</div>
+							<div class="media-body">
+							  <h3 class="media-heading">品质保障</h3>
+							  <p>品质护航，购物无忧</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-sm-6 col-md-4">
+					<a href="javascript:;">
+						<div class="media">
+							<div class="media-left">
+							  <a href="#">
+								<img class="media-object" src="images/info_img1.png" alt="">
+							  </a>
+							</div>
+							<div class="media-body">
+							  <h3 class="media-heading">品质保障</h3>
+							  <p>品质护航，购物无忧</p>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+  
+    <!-- 产品标签页 -->
+	<div class="index_products">
+	  <div class="container">
+	  <!-- Nav tabs 标签页导航条 -->
+	  <div class="tab_parent">
+	  	<ul class="nav nav-tabs" role="tablist">
+	      <li role="presentation" class="active"><a href="#chosen" aria-controls="chosen" role="tab" data-toggle="tab">特选</a></li>
+	      <li role="presentation"><a href="#male" aria-controls="male" role="tab" data-toggle="tab">男子</a></li>
+	      <li role="presentation"><a href="#woman" aria-controls="woman" role="tab" data-toggle="tab">女子</a></li>
+  	      <li role="presentation"><a href="#children" aria-controls="children" role="tab" data-toggle="tab">儿童</a></li>
+		  <li role="presentation"><a href="#motion" aria-controls="motion" role="tab" data-toggle="tab">运动</a></li>
+		  <li role="presentation"><a href="#brand" aria-controls="brand" role="tab" data-toggle="tab">品牌</a></li>
+		  <li role="presentation"><a href="#sale" aria-controls="sale" role="tab" data-toggle="tab">清仓</a></li>
+	   </ul>
+	  </div>
+	  <!-- Tab panes:内容面板 -->
+	  <div class="tab-content">
+	    <div role="tabpanel" class="tab-pane active" id="chosen">
+			<div class="row">
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/choosen/img1.jpg" alt="...">
+			      <div class="caption">
+			        <h3>阿迪达斯三叶草半身裙夏季新款女长裙网纱运动女装</h3>
+			        <div>
+			        	<span class="spanlf">¥99.00</span>
+			        	<span class="spanrt">¥169.00</span>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/choosen/img2.jpg" alt="...">
+			      <div class="caption">
+			        <h3>阿迪达斯短袖男夏季半袖运动休闲透气三叶草正品全棉T恤</h3>
+					<div>
+						<span class="spanlf">¥159.00</span>
+						<span class="spanrt">¥229.00</span>
+					</div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/choosen/img3.jpg" alt="...">
+			      <div class="caption">
+			        <h3>阿迪达斯短袖T恤新款2020官网三叶草女装运动</h3>
+			        <div>
+			        	<span class="spanlf">¥69.00</span>
+			        	<span class="spanrt">¥129.00</span>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/choosen/img4.jpg" alt="...">
+			      <div class="caption">
+			        <h3>阿迪达斯官网adidas短袖女2020夏季新款半袖女装运动休闲镂空T恤</h3>
+			        <div>
+			        	<span class="spanlf">¥69.00</span>
+			        	<span class="spanrt">¥129.00</span>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/choosen/img8.jpg" alt="...">
+			      <div class="caption">
+			        <h3>阿迪达斯男鞋I-5923官网正品boost休闲板鞋D97344 97347 EE4935</h3>
+			        <div>
+			        	<span class="spanlf">¥299.00</span>
+			        	<span class="spanrt">¥369.00</span>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/choosen/img6.jpg" alt="...">
+			      <div class="caption">
+			        <h3>耐克Flight Legacy AJ4气垫缓震运动篮球鞋休闲鞋BQ4212-101</h3>
+			        <div>
+			        	<span class="spanlf">¥419.00</span>
+			        	<span class="spanrt">¥529.00</span>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/choosen/img7.jpg" alt="...">
+			      <div class="caption">
+			        <h3>阿迪达斯男鞋三叶草官网金标贝壳头休闲鞋情侣透气小白鞋</h3>
+			        <div>
+			        	<span class="spanlf">¥329.00</span>
+			        	<span class="spanrt">¥449.00</span>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/choosen/img5.jpg" alt="...">
+			      <div class="caption">
+			        <h3>阿迪达斯女鞋三叶草贝壳头小白鞋一脚蹬绑带樱花运动板鞋官网正品</h3>
+			        <div>
+			        	<span class="spanlf">¥239.00</span>
+			        	<span class="spanrt">¥299.00</span>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+		</div>
+	    <div role="tabpanel" class="tab-pane" id="male">
+			<div class="row">
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/male/img1.jpg" alt="...">
+			      <div class="caption">
+			        <h3>阿迪达斯短袖男2020夏季新款官网体恤男圆领透气休闲半袖运动T恤</h3>
+			        <div>
+			        	<span class="spanlf">¥69.00</span>
+			        	<span class="spanrt">¥99.00</span>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/male/img2.jpg" alt="...">
+			      <div class="caption">
+			        <h3>阿迪达斯短袖男2020夏季新款男士体恤健身跑步运动速干T恤CW3927</h3>
+					<div>
+						<span class="spanlf">¥99.00</span>
+						<span class="spanrt">¥129.00</span>
+					</div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/male/img3.jpg" alt="...">
+			      <div class="caption">
+			        <h3>阿迪达斯夏季男子足球训练服运动印花圆领短袖T恤 CV6335 EK4261</h3>
+			        <div>
+			        	<span class="spanlf">¥69.00</span>
+			        	<span class="spanrt">¥129.00</span>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/male/img4.jpg" alt="...">
+			      <div class="caption">
+			        <h3>阿迪达斯梭织裤子男2020夏季新款运动透气跑步五分速干短裤DX9701</h3>
+			        <div>
+			        	<span class="spanlf">¥79.00</span>
+			        	<span class="spanrt">¥129.00</span>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/male/img5.jpg" alt="...">
+			      <div class="caption">
+			        <h3>阿迪达斯裤子男20夏季休闲长裤官网小脚男裤束脚收口运动裤CV6800</h3>
+			        <div>
+			        	<span class="spanlf">¥159.00</span>
+			        	<span class="spanrt">¥229.00</span>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/male/img6.jpg" alt="...">
+			      <div class="caption">
+			        <h3>阿迪达斯裤子男20夏季休闲长裤官网小脚男裤束脚收口运动裤CV6800</h3>
+			        <div>
+			        	<span class="spanlf">¥369.00</span>
+			        	<span class="spanrt">¥429.00</span>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/male/img7.jpg" alt="...">
+			      <div class="caption">
+			        <h3>阿迪达斯三叶草男子运动卫衣圆领休闲套头衫BR5282 CW2358 EC7320</h3>
+			        <div>
+			        	<span class="spanlf">¥329.00</span>
+			        	<span class="spanrt">¥449.00</span>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/male/img8.jpg" alt="...">
+			      <div class="caption">
+			        <h3>阿迪达斯三叶草 INSLEY JACKET男子防风连帽外套DU8336 EC7329 </h3>
+			        <div>
+			        	<span class="spanlf">¥339.00</span>
+			        	<span class="spanrt">¥399.00</span>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+		</div>
+	    <div role="tabpanel" class="tab-pane" id="woman">
+			<div class="row">
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/women/img1.jpg" alt="...">
+			      <div class="caption">
+			        <h3>阿迪达斯紧身裤女黑色训练长裤跑步运动裤弹力健身裤AZ2930 </h3>
+			        <div>
+			        	<span class="spanlf">¥79.00</span>
+			        	<span class="spanrt">¥129.00</span>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/women/img2.jpg" alt="...">
+			      <div class="caption">
+			        <h3>阿迪达斯女装休闲运动套头衫秋季新款官网正品三叶草圆领卫衣</h3>
+					<div>
+						<span class="spanlf">¥169.00</span>
+						<span class="spanrt">¥229.00</span>
+					</div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/women/img3.jpg" alt="...">
+			      <div class="caption">
+			        <h3>阿迪达斯女裤春秋休闲裤长裤子小脚运动裤女士新款潮流韩版</h3>
+			        <div>
+			        	<span class="spanlf">¥99.00</span>
+			        	<span class="spanrt">¥159.00</span>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/women/img4.jpg" alt="...">
+			      <div class="caption">
+			        <h3>阿迪达斯NEO半身裙女春夏学生运动休闲百褶裙裙子</h3>
+			        <div>
+			        	<span class="spanlf">¥119.00</span>
+			        	<span class="spanrt">¥169.00</span>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/women/img5.jpg" alt="...">
+			      <div class="caption">
+			        <h3>阿迪达斯NEO休闲裤女子夏季中裤九分七分裤夏季新款迪丽热巴亲着</h3>
+			        <div>
+			        	<span class="spanlf">¥159.00</span>
+			        	<span class="spanrt">¥229.00</span>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/women/img6.jpg" alt="...">
+			      <div class="caption">
+			        <h3>阿迪达斯短袖T恤新款2020官网三叶草女装运动ED</h3>
+			        <div>
+			        	<span class="spanlf">¥89.00</span>
+			        	<span class="spanrt">¥129.00</span>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/women/img7.jpg" alt="...">
+			      <div class="caption">
+			        <h3>Adidas阿迪达斯三叶草 女子 崔智苑TRACKTOP 联名外套裤子EH6045</h3>
+			        <div>
+			        	<span class="spanlf">¥179.00</span>
+			        	<span class="spanrt">¥249.00</span>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/women/img8.jpg" alt="...">
+			      <div class="caption">
+			        <h3>阿迪达斯三叶草女子EQT半身裙百褶裙范冰冰运动长裙夏季新</h3>
+			        <div>
+			        	<span class="spanlf">¥239.00</span>
+			        	<span class="spanrt">¥299.00</span>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+		</div>
+	    <div role="tabpanel" class="tab-pane" id="children">
+			<div class="row">
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/child/img1.jpg" alt="...">
+			      <div class="caption">
+			        <h3>阿迪达斯中童小童儿童轻便舒适软底运动凉鞋CQ0047 CQ0053 DB2532</h3>
+			        <div>
+			        	<span class="spanlf">¥99.00</span>
+			        	<span class="spanrt">¥129.00</span>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/child/img2.jpg" alt="...">
+			      <div class="caption">
+			        <h3>阿迪达斯三叶草贝壳头童鞋男女幼中大童运动鞋板鞋</h3>
+					<div>
+						<span class="spanlf">¥119.00</span>
+						<span class="spanrt">¥169.00</span>
+					</div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/child/img3.jpg" alt="...">
+			      <div class="caption">
+			        <h3>阿迪达斯童鞋男女运动鞋大童鞋adidas官网正品儿童品牌运动鞋</h3>
+			        <div>
+			        	<span class="spanlf">¥99.00</span>
+			        	<span class="spanrt">¥159.00</span>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/child/img4.jpg" alt="...">
+			      <div class="caption">
+			        <h3>阿迪达斯运动休闲 童鞋男女婴儿魔术贴训练鞋</h3>
+			        <div>
+			        	<span class="spanlf">¥119.00</span>
+			        	<span class="spanrt">¥169.00</span>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/child/img5.jpg" alt="...">
+			      <div class="caption">
+			        <h3>阿迪达斯足球鞋童男女大童</h3>
+			        <div>
+			        	<span class="spanlf">¥129.00</span>
+			        	<span class="spanrt">¥179.00</span>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/child/img6.jpg" alt="...">
+			      <div class="caption">
+			        <h3>阿迪达斯 三叶草 小童轻便软底舒适儿童运动鞋</h3>
+			        <div>
+			        	<span class="spanlf">¥89.00</span>
+			        	<span class="spanrt">¥129.00</span>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/child/img7.jpg" alt="...">
+			      <div class="caption">
+			        <h3>阿迪达斯男女沙滩儿童运动不露指凉鞋夏季新款运动休闲板鞋</h3>
+			        <div>
+			        	<span class="spanlf">¥89.00</span>
+			        	<span class="spanrt">¥129.00</span>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/child/img8.jpg" alt="...">
+			      <div class="caption">
+			        <h3>阿迪达斯童鞋三叶草男女大童休闲鞋软底史密斯婴儿官网品牌BZ0551 </h3>
+			        <div>
+			        	<span class="spanlf">¥119.00</span>
+			        	<span class="spanrt">¥219.00</span>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+		</div>
+		<div role="tabpanel" class="tab-pane" id="motion">
+			<div class="row">
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/male/img1.jpg" alt="...">
+			      <div class="caption">
+			        <h3>阿迪达斯短袖男2020夏季新款官网体恤男圆领透气休闲半袖运动T恤</h3>
+			        <div>
+			        	<span class="spanlf">¥69.00</span>
+			        	<span class="spanrt">¥99.00</span>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/male/img2.jpg" alt="...">
+			      <div class="caption">
+			        <h3>阿迪达斯短袖男2020夏季新款男士体恤健身跑步运动速干T恤CW3927</h3>
+					<div>
+						<span class="spanlf">¥99.00</span>
+						<span class="spanrt">¥129.00</span>
+					</div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/male/img3.jpg" alt="...">
+			      <div class="caption">
+			        <h3>阿迪达斯夏季男子足球训练服运动印花圆领短袖T恤 CV6335 EK4261</h3>
+			        <div>
+			        	<span class="spanlf">¥69.00</span>
+			        	<span class="spanrt">¥129.00</span>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/male/img4.jpg" alt="...">
+			      <div class="caption">
+			        <h3>阿迪达斯梭织裤子男2020夏季新款运动透气跑步五分速干短裤DX9701</h3>
+			        <div>
+			        	<span class="spanlf">¥79.00</span>
+			        	<span class="spanrt">¥129.00</span>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/male/img5.jpg" alt="...">
+			      <div class="caption">
+			        <h3>阿迪达斯裤子男20夏季休闲长裤官网小脚男裤束脚收口运动裤CV6800</h3>
+			        <div>
+			        	<span class="spanlf">¥159.00</span>
+			        	<span class="spanrt">¥229.00</span>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/male/img6.jpg" alt="...">
+			      <div class="caption">
+			        <h3>阿迪达斯裤子男20夏季休闲长裤官网小脚男裤束脚收口运动裤CV6800</h3>
+			        <div>
+			        	<span class="spanlf">¥369.00</span>
+			        	<span class="spanrt">¥429.00</span>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/male/img7.jpg" alt="...">
+			      <div class="caption">
+			        <h3>阿迪达斯三叶草男子运动卫衣圆领休闲套头衫BR5282 CW2358 EC7320</h3>
+			        <div>
+			        	<span class="spanlf">¥329.00</span>
+			        	<span class="spanrt">¥449.00</span>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/male/img8.jpg" alt="...">
+			      <div class="caption">
+			        <h3>阿迪达斯三叶草 INSLEY JACKET男子防风连帽外套DU8336 EC7329 </h3>
+			        <div>
+			        	<span class="spanlf">¥339.00</span>
+			        	<span class="spanrt">¥399.00</span>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+		</div>
+		<div role="tabpanel" class="tab-pane" id="brand">
+			<div class="row">
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/choosen/img1.jpg" alt="...">
+			      <div class="caption">
+			        <h3>阿迪达斯三叶草半身裙夏季新款女长裙网纱运动女装</h3>
+			        <div>
+			        	<span class="spanlf">¥99.00</span>
+			        	<span class="spanrt">¥169.00</span>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/choosen/img2.jpg" alt="...">
+			      <div class="caption">
+			        <h3>阿迪达斯短袖男夏季半袖运动休闲透气三叶草正品全棉T恤</h3>
+					<div>
+						<span class="spanlf">¥159.00</span>
+						<span class="spanrt">¥229.00</span>
+					</div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/choosen/img3.jpg" alt="...">
+			      <div class="caption">
+			        <h3>阿迪达斯短袖T恤新款2020官网三叶草女装运动</h3>
+			        <div>
+			        	<span class="spanlf">¥69.00</span>
+			        	<span class="spanrt">¥129.00</span>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/choosen/img4.jpg" alt="...">
+			      <div class="caption">
+			        <h3>阿迪达斯官网adidas短袖女2020夏季新款半袖女装运动休闲镂空T恤</h3>
+			        <div>
+			        	<span class="spanlf">¥69.00</span>
+			        	<span class="spanrt">¥129.00</span>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/choosen/img8.jpg" alt="...">
+			      <div class="caption">
+			        <h3>阿迪达斯男鞋I-5923官网正品boost休闲板鞋D97344 97347 EE4935</h3>
+			        <div>
+			        	<span class="spanlf">¥299.00</span>
+			        	<span class="spanrt">¥369.00</span>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/choosen/img6.jpg" alt="...">
+			      <div class="caption">
+			        <h3>耐克Flight Legacy AJ4气垫缓震运动篮球鞋休闲鞋BQ4212-101</h3>
+			        <div>
+			        	<span class="spanlf">¥419.00</span>
+			        	<span class="spanrt">¥529.00</span>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/choosen/img7.jpg" alt="...">
+			      <div class="caption">
+			        <h3>阿迪达斯男鞋三叶草官网金标贝壳头休闲鞋情侣透气小白鞋</h3>
+			        <div>
+			        	<span class="spanlf">¥329.00</span>
+			        	<span class="spanrt">¥449.00</span>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/products/choosen/img5.jpg" alt="...">
+			      <div class="caption">
+			        <h3>阿迪达斯女鞋三叶草贝壳头小白鞋一脚蹬绑带樱花运动板鞋官网正品</h3>
+			        <div>
+			        	<span class="spanlf">¥239.00</span>
+			        	<span class="spanrt">¥299.00</span>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+		</div>
+		<div role="tabpanel" class="tab-pane" id="sale">
+			<div class="row">
+				  <div class="col-sm-6 col-md-3">
+				    <div class="thumbnail">
+				      <img src="images/products/women/img1.jpg" alt="...">
+				      <div class="caption">
+				        <h3>阿迪达斯紧身裤女黑色训练长裤跑步运动裤弹力健身裤AZ2930 </h3>
+				        <div>
+				        	<span class="spanlf">¥79.00</span>
+				        	<span class="spanrt">¥129.00</span>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="col-sm-6 col-md-3">
+				    <div class="thumbnail">
+				      <img src="images/products/women/img2.jpg" alt="...">
+				      <div class="caption">
+				        <h3>阿迪达斯女装休闲运动套头衫秋季新款官网正品三叶草圆领卫衣</h3>
+						<div>
+							<span class="spanlf">¥169.00</span>
+							<span class="spanrt">¥229.00</span>
+						</div>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="col-sm-6 col-md-3">
+				    <div class="thumbnail">
+				      <img src="images/products/women/img3.jpg" alt="...">
+				      <div class="caption">
+				        <h3>阿迪达斯女裤春秋休闲裤长裤子小脚运动裤女士新款潮流韩版</h3>
+				        <div>
+				        	<span class="spanlf">¥99.00</span>
+				        	<span class="spanrt">¥159.00</span>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="col-sm-6 col-md-3">
+				    <div class="thumbnail">
+				      <img src="images/products/women/img4.jpg" alt="...">
+				      <div class="caption">
+				        <h3>阿迪达斯NEO半身裙女春夏学生运动休闲百褶裙裙子</h3>
+				        <div>
+				        	<span class="spanlf">¥119.00</span>
+				        	<span class="spanrt">¥169.00</span>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="col-sm-6 col-md-3">
+				    <div class="thumbnail">
+				      <img src="images/products/women/img5.jpg" alt="...">
+				      <div class="caption">
+				        <h3>阿迪达斯NEO休闲裤女子夏季中裤九分七分裤夏季新款迪丽热巴亲着</h3>
+				        <div>
+				        	<span class="spanlf">¥159.00</span>
+				        	<span class="spanrt">¥229.00</span>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="col-sm-6 col-md-3">
+				    <div class="thumbnail">
+				      <img src="images/products/women/img6.jpg" alt="...">
+				      <div class="caption">
+				        <h3>阿迪达斯短袖T恤新款2020官网三叶草女装运动ED</h3>
+				        <div>
+				        	<span class="spanlf">¥89.00</span>
+				        	<span class="spanrt">¥129.00</span>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="col-sm-6 col-md-3">
+				    <div class="thumbnail">
+				      <img src="images/products/women/img7.jpg" alt="...">
+				      <div class="caption">
+				        <h3>Adidas阿迪达斯三叶草 女子 崔智苑TRACKTOP 联名外套裤子EH6045</h3>
+				        <div>
+				        	<span class="spanlf">¥179.00</span>
+				        	<span class="spanrt">¥249.00</span>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="col-sm-6 col-md-3">
+				    <div class="thumbnail">
+				      <img src="images/products/women/img8.jpg" alt="...">
+				      <div class="caption">
+				        <h3>阿迪达斯三叶草女子EQT半身裙百褶裙范冰冰运动长裙夏季新</h3>
+				        <div>
+				        	<span class="spanlf">¥239.00</span>
+				        	<span class="spanrt">¥299.00</span>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+		</div>
+	  </div>
+	 </div>
+	</div>
+	
+	<!-- 新闻块 -->
+	<div class="index_news">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2 col-md-offset-2"><h3 class="news_title">全部资讯</h3></div>
+				<div class="col-md-1">
+					<div class="news_line hidden-xs hidden-sm"></div>
+					<ul class="nav nav-tabs" role="tablist">
+					    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-bullhorn"></span></a></li>
+					    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-link"></span></a></li>
+					    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-certificate"></span></a></li>
+					    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-bell"></span></a></li>
+					  </ul>
+				</div>
+				<div class="col-md-7">
+					<div class="tab-content">
+					    <div role="tabpanel" class="tab-pane active" id="home">
+							<ul class="news_list">
+								<li><a href=""><span class="hidden-xs">2016-01-01</span>【购物指南】免费注册，开通支付宝，支付宝充值</a></li>
+								<li><a href=""><span class="hidden-xs">2016-01-01</span>【购物指南】免费注册，开通支付宝，支付宝充值</a></li>
+								<li><a href=""><span class="hidden-xs">2016-01-01</span>【购物指南】免费注册，开通支付宝，支付宝充值</a></li>
+							</ul>
+						</div>
+					    <div role="tabpanel" class="tab-pane" id="profile">
+							<ul class="news_list">
+								<li><a href=""><span class="hidden-xs">2016-01-01</span>【天猫保障】发票保障，售后规则，缺货赔付</a></li>
+								<li><a href=""><span class="hidden-xs">2016-01-01</span>【天猫保障】发票保障，售后规则，缺货赔付</a></li>
+								<li><a href=""><span class="hidden-xs">2016-01-01</span>【天猫保障】发票保障，售后规则，缺货赔付</a></li>
+							</ul>
+						</div>
+					    <div role="tabpanel" class="tab-pane" id="messages">
+							<ul class="news_list">
+								<li><a href=""><span class="hidden-xs">2016-01-01</span>【支付方式】快捷支付，信用卡余额宝，蚂蚁花呗，货到付款</a></li>
+								<li><a href=""><span class="hidden-xs">2016-01-01</span>【支付方式】快捷支付，信用卡余额宝，蚂蚁花呗，货到付款</a></li>
+								<li><a href=""><span class="hidden-xs">2016-01-01</span>【支付方式】快捷支付，信用卡余额宝，蚂蚁花呗，货到付款</a></li>
+								<li><a href=""><span class="hidden-xs">2016-01-01</span>【支付方式】快捷支付，信用卡余额宝，蚂蚁花呗，货到付款</a></li>
+							</ul>
+						</div>
+					    <div role="tabpanel" class="tab-pane" id="settings">
+							<ul class="news_list">
+								<li><a href=""><span class="hidden-xs">2016-01-01</span>【商家服务】天猫规则，商家入驻，商家中心，天猫智库，物流服务，喵言喵语，运营服务</a></li>
+								<li><a href=""><span class="hidden-xs">2016-01-01</span>【商家服务】天猫规则，商家入驻，商家中心，天猫智库，物流服务，喵言喵语，运营服务</a></li>
+								<li><a href=""><span class="hidden-xs">2016-01-01</span>【商家服务】天猫规则，商家入驻，商家中心，天猫智库，物流服务，喵言喵语，运营服务</a></li>
+								<li><a href=""><span class="hidden-xs">2016-01-01</span>【商家服务】天猫规则，商家入驻，商家中心，天猫智库，物流服务，喵言喵语，运营服务</a></li>
+								<li><a href=""><span class="hidden-xs">2016-01-01</span>【商家服务】天猫规则，商家入驻，商家中心，天猫智库，物流服务，喵言喵语，运营服务</a></li>
+							</ul>
+						</div>
+					  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+  
+    <!-- 底部备案信息 -->
+	<footer class="index_footer">
+		<div class="container">
+			<p class="footer_partner"><a href="javascript:;">阿里巴巴集团</a><a href="javascript:;">淘宝网</a><a href="javascript:;">天猫</a><a href="javascript:;">聚划算</a><a href="javascript:;">全球速卖通</a><a href="javascript:;">1688</a><a href="javascript:;">阿里云计算</a><a href="javascript:;">飞猪</a><a href="javascript:;">万网</a><a href="javascript:;">UC</a><a href="javascript:;">支付宝</a><a href="javascript:;">阿里安全</a></p>
+			
+			<p class="footer_record hidden-xs"><a href="javascript:;">增值电信业务经营许可证： 浙B2-20110446</a><a href="javascript:;"> 市场名称登记证：工商网市字3301004119号</a><a href="javascript:;">出版物网络交易平台服务经营备案证： 新出发浙备字第001号</a></p>
+			
+			<p class="footer_record hidden-xs"><a href="javascript:;">互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com</a><a href="javascript:;">互联网药品信息服务资质证书编号：浙-（经营性）-2017-0005</a><a href="javascript:;">浙江省网络食品销售第三方平台提供者备案：浙网食A33010002</a><a href="javascript:;">© 2003-2019 TMALL.COM 版权所有</a></p>
+		</div>
+	</footer>
+  </body>
+</html>
